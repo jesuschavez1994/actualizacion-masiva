@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Dato fijo</th>
+                <th>Pills</th>
+                <th>Responsable</th>
+                <th>Seleccionable</th>
+                <th>Seleccionable</th>
+                <th>Capturable</th>
+                <th>Drop down</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of items">
+                <td class="align-middle">{{ item.datoFijo }}</td>
+                <td class="align-middle">
+                  <div class="col d-flex align-items-center">
+                    <div class="number-pill-indigo">{{ item.pill }}</div>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <div class="col d-flex align-items-center">
+                    <div class="number-pill-name">{{ item.responsable }}</div>
+                  </div>
+                </td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio{{item.datoFijo}}" id="btnradio1{{item.datoFijo}}" autocomplete="off" [checked]="item.radioSelected">
+                    <label class="btn btn-outline-primary" for="btnradio1{{item.datoFijo}}">Sí</label>
+                    <input type="radio" class="btn-check" name="btnradio{{item.datoFijo}}" id="btnradio2{{item.datoFijo}}" autocomplete="off" [checked]="!item.radioSelected">
+                    <label class="btn btn-outline-primary" for="btnradio2{{item.datoFijo}}">No</label>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="defaultCheck{{item.datoFijo}}" [checked]="item.checkboxSelected">
+                    <label class="form-check-label" for="defaultCheck{{item.datoFijo}}">
+                      Checkbox
+                    </label>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <div class="form-group mb-0">
+                    <input type="text" class="form-control-sm" placeholder="Captura">
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <select name="select">
+                    <option value="value1">Selección 1</option>
+                    <option value="value2">Selección 2</option>
+                    <option value="value3">Selección 3</option>
+                  </select>
+                </td>
+                <td class="align-middle">
+                  <div class="d-flex justify-content-start card-actions">
+                    <a *ngFor="let accion of item.acciones" [href]="accion.href" class="me-2" data-toggle="tooltip" [title]="accion.title">
+                      <i class="accion.icon fa-fw"></i>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center mt-4">
+            <a href="#" class="more-data-100">Cargar más datos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

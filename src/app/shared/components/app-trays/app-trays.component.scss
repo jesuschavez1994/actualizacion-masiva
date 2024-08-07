@@ -1,0 +1,71 @@
+.dropdown-menu {
+display: none;
+position: absolute;
+margin-top: .125rem;
+}
+
+.dropdown-menu.show {
+display: block;
+}
+
+.dropdown-toggle::after {
+display: none; /* Eliminar el triángulo de Bootstrap */
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.icons {
+cursor: pointer;
+}
+
+.dropdown-menu {
+border-radius: .25rem;
+box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .175);
+}
+
+
+.circle-container {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.circle.red {
+    background-color: #D91818;
+}
+
+
+.circle.yellow{
+    background-color: #F5A623;;
+}
+
+
+.button-item {
+    padding: 2px 16px;
+    border-radius: 24px;
+    color: #FFF;
+}
+
+
+.pruebas{
+    background:#F5A623 ;
+}
+
+.desarrollo{
+    background: #30A7DD;
+}
+
+.analisis{
+    background: #F059C4;
+}
+
+  

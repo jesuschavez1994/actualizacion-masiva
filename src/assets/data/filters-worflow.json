@@ -1,0 +1,85 @@
+{
+    "id": 1,
+    "informationTable": {
+      "addButtonLabel": "Agregar Elemento",
+      "hasAddPermission": true,
+      "titleDashboard": "Título de dashboard",
+      "hasTableIndicator": true
+    },
+    "secciones": [
+      {
+        "seccion": {
+          "id": 1,
+          "tipo": "view",
+          "label": "FISCAL GENERAL",
+          "items": [
+            {
+              "id": null,
+              "label": null,
+              "componente": "button-spartan",
+              "divHeight": 0.0,
+              "divWidth": 0.0,
+              "width": 0.0,
+              "values": [
+                {
+                  "id": "1",
+                  "label": "VISTA GENERAL",
+                  "selected": true
+                }
+              ],
+              "defaultValue": null,
+              "value": null,
+              "sp": null
+            }
+          ]
+        }
+      },
+      {
+        "seccion": {
+          "id": 2,
+          "tipo": "filters",
+          "label": "Filtros",
+          "items": [
+            {
+              "id": "1",
+              "label": "Género",
+              "componente": "buttonGroup",
+              "divHeight": 0.0,
+              "divWidth": 0.0,
+              "width": 0.0,
+              "values": [
+                {
+                  "id": "",
+                  "value": "",
+                  "label": "Ambos",
+                  "icon": "wc",
+                  "selected": true,
+                  "disabled": false
+                },
+                {
+                  "id": "1",
+                  "value": "1",
+                  "label": "Femenino",
+                  "icon": "woman",
+                  "selected": false,
+                  "disabled": false
+                },
+                {
+                  "id": "2",
+                  "value": "2",
+                  "label": "Masculino",
+                  "icon": "man",
+                  "selected": false,
+                  "disabled": false
+                }
+              ],
+              "defaultValue": "1",
+              "value": "Genero",
+              "sp": "uspGetTipoVictima"
+            }
+          ]
+        }
+      }
+    ]
+  }
+  

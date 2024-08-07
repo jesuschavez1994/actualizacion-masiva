@@ -1,0 +1,97 @@
+
+{
+    "cards": [
+      {
+        "id": 1,
+        "dato": "",
+        "porcentaje": 42,
+        "color": "#C1352B",
+        "title": "Título de la sección",
+        "number": 4,
+        "description": "Aquí va una descripción del contenido de la charola.",
+        "items": [
+          {
+            "id": 1,
+            "date": "05/07/2024",
+            "statusColor": "#D91818",
+            "tags": [
+              { "label": "Diseño de pantallas nuevas para Spartane", "color": "#000000" },
+              { "label": "Mauricio Canchola", "color": "#000000" }
+            ],
+            "type": "Diseño",
+            "typeColor": "#F059C4",
+            "showIcons": true,
+            "menuOptions": [
+              { "label": "Consultar", "redirectUrl": "http://108.181.200.246/saprojpjey/frontal/registro/consulta" },
+              { "label": "Editar", "redirectUrl": "http://108.181.200.246/saprojpjey/frontal/registro/consulta" }
+            ]
+          },
+          {
+            "id": 2,
+            "date": "05/07/2024",
+            "statusColor": "#D91818",
+            "tags": [
+              { "label": "Diseño de pantallas nuevas para Spartane", "color": "#000000" },
+              { "label": "Mauricio Canchola", "color": "#000000" }
+            ],
+            "type": "Desarrollo",
+            "typeColor": "#30A7DD",
+            "showIcons": true,
+            "menuOptions": [
+              { "label": "Consultar", "redirectUrl": "http://108.181.200.246/saprojpjey/frontal/registro/consulta" },
+              { "label": "Editar", "redirectUrl": "http://108.181.200.246/saprojpjey/frontal/registro/consulta" }
+            ]
+          },
+          {
+            "id": 3,
+            "date": "05/07/2024",
+            "statusColor": "#F5A623",
+            "tags": [
+              { "label": "Diseño de pantallas nuevas para Spartane", "color": "#000000" },
+              { "label": "Mauricio Canchola", "color": "#000000" }
+            ],
+            "type": "Desarrollo",
+            "typeColor": "#30A7DD",
+            "showIcons": true,
+            "menuOptions": [
+              { "label": "Consultar", "redirectUrl": "http://108.181.200.246/saprojpjey/frontal/registro/consulta" },
+              { "label": "Editar", "redirectUrl": "http://108.181.200.246/saprojpjey/frontal/registro/consulta" }
+            ]
+          }
+        ]
+        
+      },
+      {
+        "id": 2,
+        "dato": "",
+        "porcentaje": 55,
+        "color": "#F5A623",
+        "title": "Título de la sección 2",
+        "number": 6,
+        "description": "Descripción del contenido de la charola 2.",
+        "items": [
+          {
+            "id":4 ,
+            "date": "06/07/2024",
+            "statusColor": "#F5A623",
+            "tags": [
+              { "label": "Planificación", "color": "#000000" },
+              { "label": "Luis", "color": "#000000" }
+            ],
+            "type": "Pruebas",
+            "typeColor": "#F0B559",
+            "showIcons": false,
+            "menuOptions": [
+              { "label": "Consultar", "redirectUrl": "http://108.181.200.246/saprojpjey/frontal/registro/consulta" },
+              { "label": "Editar", "redirectUrl": "http://108.181.200.246/saprojpjey/frontal/registro/consulta" }
+            ]
+          }
+        ]
+        
+      }
+    ],
+    "totalItems": 100, 
+    "pageSize": 5,      
+    "currentPage": 1
+  }
+  

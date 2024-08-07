@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand navbar-light bg-transparent topbar static-top">
+    <div class="d-flex justify-content-between w-100 mt-4">
+        <div class="d-flex" style="cursor: pointer;" (click)="toRoot()">
+        <img src="./../../../../assets/img/logo_pjey.png" class="img-fluid" />
+        <!-- <div>
+            <h1>FISCAL GENERAL</h1>
+            <h4>Gestión Inteligente de Indicios</h4>
+        </div> -->
+        </div>
+        <div>
+            <form action="">
+                <div class="btn-group-container d-inline-flex mt-1">
+                <div class="p-1 bg-white rounded rounded-pill shadow-sm form-size">
+                    <div class="input-group">
+                    <input type="search" placeholder="Busca por carpeta o indicio" aria-describedby="button-addon1"
+                        class="form-control border-0 bg-white" />
+                    <div class="input-group-append">
+                        <button id="button-addon1" type="submit" class="btn btn-link text-primary">
+                        <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-2">
+                          
+        </div>
+        
+    </div>
+</nav>
+
+<app-filters></app-filters>
+
+<app-app-information-card-with-chart [cards]="this.cards" *ngIf="this.showInformationCard"></app-app-information-card-with-chart>
+
+<!-- <app-app-trays [cards]="this.cards"></app-app-trays> -->
+ <app-information-table></app-information-table>

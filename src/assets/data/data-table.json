@@ -1,0 +1,82 @@
+[
+    {
+      "datoFijo": "Lorem ipsum dolor sit amet",
+      "pill": "Diseño",
+      "responsable": "NONMBRE DEL RESPONSABLE",
+      "radioSelected": true,
+      "checkboxSelected": true,
+      "captura": "",
+      "dropdown": "value1",
+      "acciones": [
+        { "icon": "fas fa-circle-xmark", "title": "Rechazar", "href": "#" },
+        { "icon": "fas fa-circle-check", "title": "Aprobar", "href": "#" }
+      ]
+    },
+    {
+      "datoFijo": "Lorem ipsum dolor sit amet",
+      "pill": "Diseño",
+      "responsable": "NONMBRE DEL RESPONSABLE",
+      "radioSelected": false,
+      "checkboxSelected": false,
+      "captura": "",
+      "dropdown": "value2",
+      "acciones": [
+        { "icon": "fas fa-circle-xmark", "title": "Rechazar", "href": "#" },
+        { "icon": "fas fa-circle-check", "title": "Aprobar", "href": "#" }
+      ]
+    },
+    {
+        "datoFijo": "Lorem ipsum dolor sit amet",
+        "pill": "Diseño",
+        "responsable": "NONMBRE DEL RESPONSABLE",
+        "radioSelected": true,
+        "checkboxSelected": true,
+        "captura": "",
+        "dropdown": "value1",
+        "acciones": [
+          { "icon": "fas fa-circle-xmark", "title": "Rechazar", "href": "#" },
+          { "icon": "fas fa-circle-check", "title": "Aprobar", "href": "#" }
+        ]
+      },
+      {
+        "datoFijo": "Lorem ipsum dolor sit amet",
+        "pill": "Diseño",
+        "responsable": "NONMBRE DEL RESPONSABLE",
+        "radioSelected": false,
+        "checkboxSelected": false,
+        "captura": "",
+        "dropdown": "value2",
+        "acciones": [
+          { "icon": "fas fa-circle-xmark", "title": "Rechazar", "href": "#" },
+          { "icon": "fas fa-circle-check", "title": "Aprobar", "href": "#" }
+        ]
+      },
+      {
+        "datoFijo": "Lorem ipsum dolor sit amet",
+        "pill": "Diseño",
+        "responsable": "NONMBRE DEL RESPONSABLE",
+        "radioSelected": false,
+        "checkboxSelected": false,
+        "captura": "",
+        "dropdown": "value2",
+        "acciones": [
+          { "icon": "fas fa-circle-xmark", "title": "Rechazar", "href": "#" },
+          { "icon": "fas fa-circle-check", "title": "Aprobar", "href": "#" }
+        ]
+      },
+      {
+        "datoFijo": "Lorem ipsum dolor sit amet",
+        "pill": "Diseño",
+        "responsable": "NONMBRE DEL RESPONSABLE",
+        "radioSelected": false,
+        "checkboxSelected": false,
+        "captura": "",
+        "dropdown": "value2",
+        "acciones": [
+          { "icon": "fas fa-circle-xmark", "title": "Rechazar", "href": "#" },
+          { "icon": "fas fa-circle-check", "title": "Aprobar", "href": "#" }
+        ]
+      }
+    
+  ]
+  

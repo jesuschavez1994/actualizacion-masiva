@@ -1,0 +1,67 @@
+<div class="row">
+    <!-- Content Column -->
+    <div class="col-lg-2 mb-4" *ngFor="let card of cards; let i = index">
+      <div class="card" [ngStyle]="{
+        'border-top': i % 2 === 0 ? '8px solid #0b511e' : 'none'
+      }">
+        <div class="row justify-content-between mt-2 w-100 ms-2">
+          <div class="col mt-2">
+            <div class="cardtitles">{{ card.title }}</div>
+          </div>
+          <div class="col mr-2 d-flex justify-content-end mt-2">
+            <div class="d-flex me-2">
+              <div class="number-pill-blue mr-2 mb-2">{{ card.number }}</div>
+            </div>
+          </div>
+          
+          <small class="text-muted">{{ card.description }}</small>
+        </div>
+        <div class="card-body">
+          <div class="card card-shadow pb-3 mb-3" *ngFor="let item of card.items; let t=index">
+            <div class="row justify-content-between mt-2 w-100 ms-2">
+              <div class="col mt-2">
+                <small class="text-muted">{{ item.date }}</small>
+              </div>
+              <div class="col mr-2 d-flex justify-content-end mt-2">
+                <div class="d-flex me-2">
+                  <div class="circle-container">
+                    <div [ngClass]="getStatusClass(item.statusColor)" class="circle"></div>
+                  </div>
+                  <div class="dropdown" [ngClass]="{'show': dropdownStates[item.id]}" (click)="toggleDropdownChild(item.id)">
+                    <a href="#" class="icons dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-ellipsis-vertical fa-fw"></i>
+                    </a>
+                    <ul class="dropdown-menu" [ngClass]="{'show': dropdownStates[item.id]}">
+                      <li *ngFor="let option of item.menuOptions">
+                        <a class="dropdown-item" (click)="NavigateTo(item.id, option.redirectUrl)">
+                          {{ option.label }}
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div *ngFor="let tag of item.tags" class="mb-2">
+                <small [ngStyle]="{ 'color': tag.color }">{{ tag.label }}</small>
+              </div>
+              <div class="row">
+                <div class="col d-flex align-items-center">
+                  <div [ngClass]="getStatusClass(item.typeColor)" class="button-item"><small>{{ item.type }}</small></div>
+                </div>
+                <div class="col">
+                  <div class="d-flex justify-content-end card-actions" *ngIf="item.showIcons">
+                    <a href="#" class="icon-refuse me-2" data-toggle="tooltip" title="Rechazar"><i class="fas fa-circle-xmark fa-fw"></i></a>
+                    <a href="#" class="icon-accept" data-toggle="tooltip" title="Aprobar"><i class="fas fa-circle-check fa-fw"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="align-items-middle">
+            <a href="#" class="more-data-100">Cargar más datos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
